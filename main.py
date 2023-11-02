@@ -33,3 +33,7 @@ async def root():
 @app.get('/ping')
 async def hello():
     return {'res': 'pong', 'version': __version__, "time": time()}
+
+@app.post('/ping')
+async def hello2():
+    return {'res': 'post testing', 'version': __version__, "time": time()}
