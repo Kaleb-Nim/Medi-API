@@ -1,1 +1,17 @@
 fastapi
+autogen
+ipykernel
+geopandas
+matplotlib
+tiktoken 
+openai 
+langchain
+python-dotenv
+fastapi 
+uvicorn
+pyautogen
+eventlet
+pydantic
+jsonschema
+chromadb
+pinecone-client

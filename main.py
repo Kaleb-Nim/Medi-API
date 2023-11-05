@@ -2,6 +2,8 @@ from time import time
 from fastapi import FastAPI, __version__
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse
+import openai 
+from llm.chains import output_chain
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
@@ -36,4 +38,8 @@ async def hello():
 
 @app.post('/ping')
 async def hello2():
-    return {'res': 'post testing', 'version': __version__, "time": time()}
+    output =output_chain.run(
+        questions=['What is the meaning of life?','What is the meaning of love?'],
+        user_question='What is the meaning of life?'
+    )
+    return {'res': 'post testing', 'version': __version__, "time": time(), 'output':output}

@@ -1,0 +1,20 @@
+[
+    {
+        "model": "gpt-3.5-turbo",
+        "api_key": "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"
+    },
+    {
+        "model": "gpt-4",
+        "api_key": "e7aab25432084c9ead3eaf0d575e6237",
+        "api_base": "https://fintechpoly.openai.azure.com/openai/deployments/fintech-gpt35/chat/completions?api-version=2023-07-01-preview",
+        "api_type": "azure",
+        "api_version": "2023-07-01-preview"
+    },
+    {
+        "model": "gpt-3.5-turbo",
+        "api_key": "e7aab25432084c9ead3eaf0d575e6237",
+        "api_base": "https://fintechpoly.openai.azure.com/openai/deployments/fintech-gpt35/chat/completions?api-version=2023-07-01-preview",
+        "api_type": "azure",
+        "api_version": "2023-07-01-preview"
+    }
+]
