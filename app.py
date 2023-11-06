@@ -3,12 +3,41 @@ from fastapi import FastAPI, __version__
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse
 import openai 
+from dotenv import load_dotenv
+import pinecone
+import openai
+import os
+import json
+from time import time 
+import tqdm
+# Typing
+from typing import List, Dict, Any, Optional, Union, Tuple
+
+from langchain.embeddings import OpenAIEmbeddings
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from pinecone.index import Index
+from pinecone.index import UpsertResponse
+from langchain.chains import LLMChain
 from llm.chains import output_chain
+from llm.Orchestrator import Orchestrator
+# Data processing stuff
+import pandas as pd
+from PineconeUtils.Queryer import PineconeQuery
+from PineconeUtils.Indexer import Indexer,DataEmbedding
+load_dotenv()
+PINECONE_API_KEY,PINECONE_ENVIRONMENT,INDEX_NAME = os.getenv("PINECONE_API_KEY"),os.getenv("PINECONE_ENVIRONMENT"),os.getenv("PINECONE_INDEX_NAME")
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
-app = FastAPI()
-app.mount("/static", StaticFiles(directory="static"), name="static")
+pineconeQuery = PineconeQuery(PINECONE_API_KEY,PINECONE_ENVIRONMENT,INDEX_NAME)
+orchestrator = Orchestrator(pineconeQuery,chain=output_chain)
 
-html = f"""
+
+from flask import Flask, render_template, request, jsonify
+import time
+
+app = Flask(__name__)
+
+html = """
 <!DOCTYPE html>
 <html>
     <head>
@@ -28,18 +57,24 @@ html = f"""
 </html>
 """
 
-@app.get("/")
-async def root():
-    return HTMLResponse(html)
+@app.route("/")
+def root():
+    return render_template(html, version=__version__)
 
-@app.get('/ping')
-async def hello():
-    return {'res': 'pong', 'version': __version__, "time": time()}
+@app.route("/ping", methods=["GET"])
+def hello():
+    return jsonify({'res': 'pong', 'version': __version__, "time": time.time()})
 
-@app.post('/ping')
-async def hello2():
-    output =output_chain.run(
-        questions=['What is the meaning of life?','What is the meaning of love?'],
-        user_question='What is the meaning of life?'
-    )
-    return {'res': 'post testing', 'version': __version__, "time": time(), 'output':output}
+@app.route("/ping", methods=["POST"])
+def query():
+    # Get user input from the query parameter
+    user_question = request.args.get("user_question")
+
+    if user_question is None:
+        return "Invalid input", 400
+
+    question_json = orchestrator.findRelevantQuestion(user_question)
+    return jsonify({'res': 'post testing', 'version': __version__, "time": time.time(), 'output': question_json})
+
+if __name__ == "__main__":
+    app.run(debug=True)

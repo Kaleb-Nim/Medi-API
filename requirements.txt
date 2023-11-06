@@ -5,7 +5,6 @@ geopandas
 matplotlib
 tiktoken 
 openai 
-langchain
 python-dotenv
 fastapi 
 uvicorn
@@ -15,3 +14,5 @@ pydantic
 jsonschema
 chromadb
 pinecone-client
+langchain==0.0.292
+flask

@@ -1,30 +1,30 @@
 ---Question List 1
-1.1) Does your loved one with dementia have difficulty dressing?
- 1.2) Does your loved one with dementia need help dressing?
- 1.3) Having difficulty wearing clothes
- 1.4) difficulty dressing
- 1.5) need help dressing
+1.a) Does your loved one with dementia have difficulty dressing?
+ 1.b) Does your loved one with dementia need help dressing?
+ 1.c) Having difficulty wearing clothes
+ 1.d) difficulty dressing
+ 1.e) need help dressing
  ---Question List 2
-2.1) Is your loved one with dementia restless? 
- 2.2) Does your loved one with dementia seem sad or upset? 
- 2.3) Does your loved one with dementia seem to be looking for something?
+2.a) Is your loved one with dementia restless? 
+ 2.b) Does your loved one with dementia seem sad or upset? 
+ 2.c) Does your loved one with dementia seem to be looking for something?
  ---Question List 3
-3.1) Does your loved one with dementia show signs of blood clot?
- 3.2) dementia sign of blood
- 3.3) dementia blood clot
+3.a) Does your loved one with dementia show signs of blood clot?
+ 3.b) dementia sign of blood
+ 3.c) dementia blood clot
  ---Question List 4
-4.1) What are the psychological impacts of tube feeding? 
- 4.2) tube feeding impacts
- 4.3) psychological impacts of tube feeding
+4.a) What are the psychological impacts of tube feeding? 
+ 4.b) tube feeding impacts
+ 4.c) psychological impacts of tube feeding
  ---Question List 5
-5.1) What should I do if my loved one with dementia keeps asking/saying repetitive things?
- 5.2) What should I do if my dementia patient keeps asking repetitive things
- 5.3) What can I do if the patient with dementia keeps repeating the same questions
- 5.4) What should I do if the patient keeps repeating the same things or the same lines
- 5.5) What to do if my loved one is always saying repetitive things
- 5.6) Dementia patients keep repeating the same questions 
- 5.7) Are there any tips for how to manage the dementia patient if he or she keeps repeating a question
- 5.8) What to do if the patient with dementia keeps saying the same things 
- 5.9) What should I do when the dementia patient ask the same question over and over again
- 5.10) How should I react to my loved one if he or she keeps repeating the same thing or same question
+5.a) What should I do if my loved one with dementia keeps asking/saying repetitive things?
+ 5.b) What should I do if my dementia patient keeps asking repetitive things
+ 5.c) What can I do if the patient with dementia keeps repeating the same questions
+ 5.d) What should I do if the patient keeps repeating the same things or the same lines
+ 5.e) What to do if my loved one is always saying repetitive things
+ 5.f) Dementia patients keep repeating the same questions 
+ 5.g) Are there any tips for how to manage the dementia patient if he or she keeps repeating a question
+ 5.h) What to do if the patient with dementia keeps saying the same things 
+ 5.i) What should I do when the dementia patient ask the same question over and over again
+ 5.j) How should I react to my loved one if he or she keeps repeating the same thing or same question
  
