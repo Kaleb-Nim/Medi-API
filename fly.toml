@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for artc-medi-api on 2023-11-06T00:46:19+08:00
+# fly.toml app configuration file generated for medi-api on 2023-11-06T09:22:04+08:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "artc-medi-api"
+app = "medi-api"
 primary_region = "sin"
 
 [build]
