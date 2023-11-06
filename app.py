@@ -65,6 +65,12 @@ def root():
 def hello():
     return jsonify({'res': 'pong', 'version': __version__, "time": time.time()})
 
+@app.route("/test", methods=["POST"])
+def query2():
+
+    return jsonify({'res': 'post testing', 'version': __version__, "time": time.time()})
+
+
 @app.route("/ping", methods=["POST"])
 def query():
     # Get user input from the query parameter
