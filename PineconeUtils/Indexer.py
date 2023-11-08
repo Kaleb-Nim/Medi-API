@@ -116,15 +116,16 @@ class Indexer:
     
     def upsertQNA(self,QNA_list:list[dict],batch_size=10):
         """Upsert by list of dict Question, Answer pairing"""
-        data_batches = [QNA_list[i:i + batch_size] for i in range(0, len(QNA_list), batch_size)]
+        data = self.dataEmbeddings.prepareJson(QNA_list)
+
+        data_batches = [data[i:i + batch_size] for i in range(0, len(data), batch_size)]
         print('data_batches: ', data_batches)
 
         upsert_responses = []
         for batch in data_batches:
-            data = self.dataEmbeddings.prepareJson(batch)
-            upsert_response = self.index.upsert(data)
+            upsert_response = self.index.upsert(batch)
             upsert_responses.append(upsert_response)
-            print(f'Upserted {len(data)} rows, Success',flush=True)
+            print(f'Upserted {len(data)} rows, upsert_response: {upsert_response}',flush=True)
 
         return upsert_responses
 

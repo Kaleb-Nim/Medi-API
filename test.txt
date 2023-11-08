@@ -1,30 +1,43 @@
 ---Question List 1
-1.a) Does your loved one with dementia have difficulty dressing?
- 1.b) Does your loved one with dementia need help dressing?
- 1.c) Having difficulty wearing clothes
- 1.d) difficulty dressing
- 1.e) need help dressing
+1.a) What services does Dementia Singapore (DSG) provide?
+ 1.b) What services does DSG provide
+ 1.c) What are DSG services
+ 1.d) What can DSG provide
+ 1.e) Services of Dementia Singapore
+ 1.f) Services of DSG
+ 1.g) What can DSG do
+ 1.h) What are the available services of DSG
+ 1.i) Dementia Singapore available services or support
+ 1.j) DSG provide what services
  ---Question List 2
-2.a) Is your loved one with dementia restless? 
- 2.b) Does your loved one with dementia seem sad or upset? 
- 2.c) Does your loved one with dementia seem to be looking for something?
+2.a) How to apply for caregiver support programmes or services provided by DSG? 
+ 2.b) How to apply for services provided by DSG
+ 2.c) How to apply for caregiver support programmes provided by DSG
+ 2.d) How to join DSG's caregiver support programmes
+ 2.e) How to join DSG services
+ 2.f) Application for DSG services and programmes
+ 2.g) How to apply for DSG caregiver programs
+ 2.h) What are the caregiver support programs provided by DSG
+ 2.i) How to apply for Dementia Singapore programmes
+ 2.j) How to apply for Dementia Singapore services
  ---Question List 3
-3.a) Does your loved one with dementia show signs of blood clot?
- 3.b) dementia sign of blood
- 3.c) dementia blood clot
+3.a) How to register for events provided by DSG? (e.g., caregiver support group or dementia care training for foreign domestic workers)
+ 3.b) How to join DSG events
+ 3.c) How to apply for DSG events
+ 3.d) Registration for DSG events
+ 3.e) How to register for events provided by DSG
+ 3.f) How to register for caregiver support group provided by DSG
+ 3.g) How to join the dementia care training provided by DSG
+ 3.h) Where can I register for DSG events
+ 3.i) Where can I apply to join DSG events
+ 3.j) How to register for events provided by Dementia Singapore
  ---Question List 4
-4.a) What are the psychological impacts of tube feeding? 
- 4.b) tube feeding impacts
- 4.c) psychological impacts of tube feeding
+4.a) Is your loved one used to driving themselves?
+ 4.b) Driving themselves
+ 4.c) driving alone
+ 4.d) drive car alone
  ---Question List 5
-5.a) What should I do if my loved one with dementia keeps asking/saying repetitive things?
- 5.b) What should I do if my dementia patient keeps asking repetitive things
- 5.c) What can I do if the patient with dementia keeps repeating the same questions
- 5.d) What should I do if the patient keeps repeating the same things or the same lines
- 5.e) What to do if my loved one is always saying repetitive things
- 5.f) Dementia patients keep repeating the same questions 
- 5.g) Are there any tips for how to manage the dementia patient if he or she keeps repeating a question
- 5.h) What to do if the patient with dementia keeps saying the same things 
- 5.i) What should I do when the dementia patient ask the same question over and over again
- 5.j) How should I react to my loved one if he or she keeps repeating the same thing or same question
+5.a) Is your loved one with dementia refusing to change clothes?
+ 5.b) Refuse to change clothes
+ 5.c) changing clothes
  
